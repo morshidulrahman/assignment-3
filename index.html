@@ -1,14 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="text-red-500">
-      welcome to assignment 3 bro lets fun with assignment 3.😁😁😁😁
-    </h1>
+    <div
+      class="navbar bg-base-100 container px-5 mx-auto flex items-center justify-between"
+    >
+      <div class="navbar-start">
+        <div class="dropdown flex lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Homepage</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-2xl font-bold font-manrope">Hockey’s</p>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="flex gap-5 font-manrope items-center">
+          <li class="text-red-500 font-semibold capitalize">Home</li>
+          <li class="font-semibold capitalize">about</li>
+          <li class="font-semibold capitalize">pages</li>
+          <li class="font-semibold capitalize">Blogs</li>
+          <li class="font-semibold capitalize">contacts</li>
+        </ul>
+      </div>
+      <div class="navbar-end flex items-center">
+        <button class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+        <button
+          class="px-5 py-3 rounded-lg bg-[#FF4240] capitalize text-white text-sm font-semibold font-manrope"
+        >
+          get ticket
+        </button>
+      </div>
+    </div>
   </body>
 </html>
